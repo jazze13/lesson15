@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <h1>Задачи на основы работы с DOM в JavaScript</h1>
+        <a href="2.html">Задачи на работу с элементами страницы в JavaScript</a>
+
+        <div class="exercise ex1">
+            <h4>1.</h4>
+            <button onclick="console.log('click')">Нажми на меня!</button>
+        </div>
+
+        <div class="exercise ex2">
+            <h4>2.</h4>
+            <button class="ex2__button_hover" onmouseover="console.log('mouse over')">Наведи на меня!</button>
+        </div>
+
+        <div class="exercise ex3">
+            <h4>3.</h4>
+            <button class="ex3__button_double_click" ondblclick="console.log('double click')">Двойноч щелчок по мне!</button>
+        </div>
+
+        <div class="exercise ex4">
+            <h4>4.</h4>
+            <div class="ex4__block_mouse_out" onmouseout="console.log('mouse out')">Наведи на меня мышь - а потом убери!</div>
+        </div>
+
+        <div class="exercise ex5">
+            <h4>5.</h4>
+            <input type="text" id="ex5__input">
+            <button class="ex5__button" onclick="ex5()">Нажми на меня!</button>
+        </div>
+
+        <div class="exercise ex6">
+            <h4>6.</h4>
+            <input type="text" id="ex6__input">
+            <button class="ex6__button" onclick="ex6()">Нажми на меня!</button>
+        </div>
+
+        <div class="exercise ex7">
+            <h4>7.</h4>
+            <img src="assets/img/1.jpg" alt="swap-image">
+            <button class="ex7__button" onclick="ex7()">Нажми на меня!</button>
+        </div>
+
+        <div class="exercise ex8">
+            <h4>8.</h4>
+            <input type="text" onclick="ex8()" value="Нажми на меня!" id="ex8__input">
+        </div>
+
+        <div class="exercise ex9">
+            <h4>9.</h4>
+            <input type="text" value="Нажми на меня!" id="ex9__input">
+        </div>
+
+        <div class="exercise ex10">
+            <h4>10.</h4>
+            <input type="text" value="Нажми на меня!" id="ex10__input">
+        </div>
+
+        <div class="exercise ex11">
+            <h4>11.</h4>
+            <input type="submit" value="Нажми на меня" id="ex11__input">
+        </div>
+
+        <div class="exercise ex12">
+            <h4>12.</h4>
+            <input type="submit" value="Нажми на меня!" id="ex12__input">
+        </div>
+
+        <div class="exercise ex13">
+            <h4>13.</h4>
+            <img src="assets/img/1.jpg" alt="swap-image">
+        </div>
+
+        <div class="exercise ex14">
+            <h4>14.</h4>
+            <input type="text" value="Нажми на меня!" id="ex14__input">
+        </div>
+
+        <div class="exercise ex15">
+            <h4>15.</h4>
+            <input type="text" value="Ку-ку" id="ex15__input">
+            <button id="ex15__button_hide">Нажми на меня!</button>
+            <button id="ex15__button_show">Потом на меня!</button>
+        </div>
+
+        <div class="exercise ex16">
+            <h4>16.</h4>
+            <input type="text" value="Ку-ку" id="ex16__input">
+            <button id="ex16__button">Нажми на меня!</button>
+        </div>
+
+        <div class="exercise ex17">
+            <h4>17.</h4>
+            <input type="submit" value="Нажми на меня!" id="ex17__input1">
+            <input type="submit" value="Нажми чтобы отблокировать элемент" id="ex17__input2">
+        </div>
+
+        <div class="exercise ex18">
+            <h4>18.</h4>
+            <button id="ex18__button">0</button>
+        </div>
+
+        <div class="exercise ex19">
+            <h4>19.</h4>
+            <input type="text" value="Ку-ку" id="ex19__input">
+            <button id="ex19__button">Нажми на меня!</button>
+        </div>
+
+        <div class="exercise ex20">
+            <h4>20.</h4>
+            <input type="text" id="ex20__input" value="Ку-ку" class="myach_rygun kyr_sosichka zhibiy_ryr">
+            <button id="ex20__button">Нажми на меня!</button>
+        </div>
+
+        <div class="exercise ex21">
+            <h4>21.</h4>
+            <input type="text" id="ex21__input1" value="Привет!">
+            <input type="text" id="ex21__input2" value="Пока!">
+            <button id="ex21__button">Нажми на меня!</button>
+        </div>
+
+        <div class="exercise ex22">
+            <h4>22.</h4>
+            <input type="text" id="ex22__input" placeholder="Введите число!">
+            <input type="submit" id="ex22__result" value="Здесь появится результат." disabled>
+            <button id="ex22__button">Нажми на меня!</button>
+        </div>
+
+        <div class="exercise ex23">
+            <h4>23.</h4>
+            <input type="text" id="ex23__input" placeholder="Введите число!">
+            <input type="sumbit" disabled id="ex23__result" value="Здесь появится результат.">
+            <button id="ex23__button">Нажми на меня!</button>
+        </div>
+
+        <div class="exercise ex24">
+            <h4>24.</h4>
+            <input type="submit" value="Нажми на меня!" id="ex24__input">
+        </div>
+
+        <div class="exercise ex25">
+            <div>
+                <h4>25.</h4>
+                <input type="text" id="ex25__input">
+            </div>
+
+            <div>
+                <button class="ex25__sign" onclick="ex25__input.value += '+'">Я добавлю +</button>
+                <button class="ex25__sign" onclick="ex25__input.value += '-'">Я добавлю -</button>
+                <button class="ex25__sign" onclick="ex25__input.value += '/'">Я добавлю /</button>
+                <button class="ex25__sign" onclick="ex25__input.value += '*'">Я добавлю *</button>
+            </div>
+
+            <div>
+                <button class="ex25__number">1</button>
+                <button class="ex25__number">2</button>
+                <button class="ex25__number">3</button>
+                <button class="ex25__number">4</button>
+                <button class="ex25__number">5</button>
+                <button class="ex25__number">6</button>
+                <button class="ex25__number">7</button>
+                <button class="ex25__number">8</button>
+                <button class="ex25__number">9</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

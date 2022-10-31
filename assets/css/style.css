@@ -1,0 +1,54 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    background:#eee;
+}
+
+.exercise {
+    margin-bottom:30px;
+}
+
+
+.ex4__block_mouse_out {
+    border:1px solid #aa0000;
+    height:300px;
+    width:300px;
+    background:#fff;
+}
+
+#ex10__input,
+#ex11__input,
+#ex12__input,
+#ex18__button,
+#ex20__input,
+.ex25 button {
+    min-width:300px;
+}
+
+.ex17 {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+#ex17__input2 {
+    display:none;
+}
+
+#ex24__input[disabled] {
+    cursor:not-allowed;
+}
+
+.ex25, .ex25 > div {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0.1em;
+}
+
+.ex25 {
+    gap:1em;
+}
