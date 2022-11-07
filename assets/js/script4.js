@@ -96,3 +96,50 @@ setInterval(() => {
 
 
 // 7
+const carousel = document.querySelector('.ex7 .carousel'),
+    buttonStart = document.querySelector('.ex7 .start'),
+    buttonStop = document.querySelector('.ex7 .stop');
+
+    
+buttonStart.onclick = () => {
+    let ex7carousel = setInterval(() => {
+        let temp = carousel.firstElementChild.src;
+        
+        for (let elem of carousel.children) {
+        if (elem.nextElementSibling)
+            elem.src = elem.nextElementSibling.src;
+        else
+        elem.src = temp;
+        }
+    }, 1000);
+
+    buttonStart.disabled = true;
+    buttonStop.disabled = false;
+
+    buttonStop.onclick = () => {
+        buttonStart.disabled = false;
+        buttonStop.disabled = true;
+        clearInterval(ex7carousel);
+    }
+}
+
+
+// 8
+const hours = document.querySelector('.ex8 .hours'),
+      minutes = document.querySelector('.ex8 .minutes'),
+      seconds = document.querySelector('.ex8 .seconds');
+
+setInterval(() => {
+    let now = new Date();
+    let midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);
+
+    let timeRemain = Math.round( (midnight - now) / 1000);
+
+    let hoursToMidnight = Math.round(timeRemain / 60 / 60),
+        minutesToMidnight = Math.round( (timeRemain - hoursToMidnight * 60 * 60) / 60 ),
+        secondsToMidnight = Math.round(timeRemain % 60);
+    
+    hours.textContent = hoursToMidnight;
+    minutes.textContent = minutesToMidnight;
+    seconds.textContent = secondsToMidnight;
+}, 1000);

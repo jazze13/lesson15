@@ -15,3 +15,14 @@
 .ex2 span {
     display:block;
 }
+
+.ex8 table {
+    border:2px solid #000;
+    border-collapse:collapse;
+    text-align:center;
+}
+
+.ex8 td {
+    border:1px solid #000;
+    padding:5px;
+}
